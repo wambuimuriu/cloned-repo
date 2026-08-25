@@ -2,10 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cloned-repo</title>
+    <title>My Website</title>
 </head>
 <body>
-    
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Welcome to My Website</h1>
+    <p>A simple example page with a few common sections</p>
+
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>This is a demo HTML page showing a header, some sections, a list, a table, a form, and a footer, with no CSS applied.</p>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Web Design</li>
+                <li>Consulting</li>
+                <li>Support</li>
+            </ul>
+
+            <table border="1">
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Web Design</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td>Consulting</td>
+                    <td>$100/hr</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form onsubmit="event.preventDefault(); alert('Thanks for reaching out!');">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" placeholder="Your name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" placeholder="Your email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" rows="4" placeholder="Your message"></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
